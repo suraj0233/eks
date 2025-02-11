@@ -58,8 +58,8 @@ resource "aws_iam_role_policy_attachment" "eks_cluster_policy" {
 }
 
 # Create an EKS Cluster
-resource "aws_eks_cluster" "eks" {
-  name     = "example-eks-cluster"
+resource "aws_eks_cluster" "eks1" {
+  name     = "example-eks-cluster1"
   role_arn = aws_iam_role.eks_cluster_role.arn
 
   vpc_config {
