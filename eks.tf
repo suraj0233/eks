@@ -37,7 +37,7 @@ resource "aws_subnet" "public_subnet_2" {
 
 # Create an IAM Role for EKS
 resource "aws_iam_role" "eks_cluster_role" {
-  name = "eks-cluster-role"
+  name = "eks-cluster-role_aws"
 
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
